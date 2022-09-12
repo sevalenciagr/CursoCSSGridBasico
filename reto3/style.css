@@ -1,0 +1,51 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+.contenedor {
+    border: 5px solid #86b3ab;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    grid-template-areas: 
+        "one two two"
+        "three three four"
+        "five six seven";
+    place-content: center;
+
+}
+
+.item {
+    border: 5px solid #010e0f;
+    font-size: 2rem;
+}
+.item-1 {    
+    background-color: #24bb2b;
+    grid-area: one;
+}
+.item-2 {    
+    background-color: #0a801d;
+    grid-area: two;    
+}
+.item-3 {
+    background-color: #1f4410;
+    grid-area: three;    
+}
+.item-4 {
+    background-color: #4fe429;
+    grid-area: four;
+}
+.item-5 {
+    background-color: #4fe429;
+    grid-area: five;    
+}
+.item-6 {
+    background-color: #0a801d;
+    grid-area: six;    
+}
+.item-7 {
+    background-color: #1f4410;
+    grid-area: seven;    
+}
